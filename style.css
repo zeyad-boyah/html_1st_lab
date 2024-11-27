@@ -37,6 +37,7 @@ header img {
 
 header ul li:hover{
     background-color: brown;
+    padding: 20px;
 }
 
 header ul li {
@@ -60,7 +61,7 @@ header ul li a{
 
 .navBar{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-start;
 }
 
 
@@ -145,11 +146,6 @@ td label {
 
 
 
-input[type="submit"]:hover,
-input[type="reset"]:hover {
-    background-color: #36b848;
-}
-
 
 footer {
     text-align: center;
@@ -169,4 +165,11 @@ footer p {
 .yourPhoneContainer{
     display: flex;
     gap: 10px;
+}
+
+.mainContent{
+    display: flex;
+    justify-content: flex-start ;
+    gap: 200px;
+    padding: 40px;
 }

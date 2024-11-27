@@ -1,0 +1,92 @@
+body{
+    margin: 0;
+}
+
+header{
+    display: flex;
+    background-color: rgb(48, 47, 47);
+    color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px 20px;
+}
+
+header ul{
+    display: flex; 
+    list-style: none; 
+    margin: 0; 
+    padding: 0; 
+    flex-grow: 1; 
+    
+}
+
+header img {
+    margin-left: auto;
+}
+
+
+header ul li:hover{
+    background-color: brown;
+}
+
+header ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid aqua;
+    flex: 1;
+}
+
+header ul li a{
+    display: block;
+    color: white;
+    text-decoration: none; 
+    font-size: 16px;
+    
+}
+
+
+.navBar{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.mainContent {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.content {
+    width: 500px;
+}
+
+.greenBorder {
+    border: 2px solid rgba(17, 250, 172, 0.363); 
+    padding: 20px; 
+    width: 50%; 
+    margin: 0 auto; 
+}
+
+.greenBoldBig{
+    color: rgb(80, 241, 188); 
+    font-size: x-large;
+    font-weight: bold;
+}
+
+table {
+    width: 1000px;
+    padding: 20px; 
+    width: 50%; 
+    margin: 0 auto; 
+    
+}
+
+.greenDashedBorderWithBackground{
+    border: 2px dashed rgb(54, 187, 143);
+    background-color: rgba(201, 231, 171, 0.308);
+}
+
+label{
+    background-color: rgba(137, 197, 59, 0.308);
+}

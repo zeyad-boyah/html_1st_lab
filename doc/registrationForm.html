@@ -5,73 +5,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style.css">
     <title>Registration Form</title>
+    
 </head>
 <body>
+    <header>
+        <ul class="navBar">
+            <li><a href="../html_1st_lab/doc/other_page.html">Home</a></li>
+            <li><a href="">Road Map</a></li>
+            <li><a href="./doc/registrationForm.html">Registration Form</a></li>
+            <li><a href="https://iti.gov.eg/home">Contact</a></li>
+        </ul>
+        <img src="../img/ITI_logo.png" alt="ITI Logo" width="200px">
+    </header>
     <div class="greenBorder">
         <form method="get">
-            <p class="greenBoldBig"> Register - Create Account</p>
+            <p class="greenBoldBig">Register - Create Account</p>
             <p class="greenDashedBorderWithBackground">Field marked with * are compulsory fields</p>
+
             <table>
                 <tr>
-                    <td>
-                        <label for="yname" >*Your Name</label>
-                    </td>
-                    <td>
-                        <input type="text" id="yname" name="yname" required>
-                    </td>
+                    <td><label for="yname">*Your Name</label></td>
+                    <td><input type="text" id="yname" name="yname" required></td>
                 </tr>
                 <tr>
-                    <td>
-                        <label for="Email" >*E-Mail ID</label>
-                    </td>
-                    <td>
-                        <input type="email" id="Email" name="Email" required>
-                    </td>
+                    <td><label for="Email">*E-Mail ID</label></td>
+                    <td><input type="email" id="Email" name="Email" required></td>
                 </tr>
                 <tr>
-                    <td>
-                        <label for="altEmail" >Alternate E-Mail ID</label>
-                    </td>
-                    <td>
-                        <input type="email" id="altEmail" name="altEmail" >
-                    </td>
+                    <td><label for="altEmail">Alternate E-Mail ID</label></td>
+                    <td><input type="email" id="altEmail" name="altEmail"></td>
                 </tr>
                 <tr>
-                    <td>
-                        <p>Your Phone</p>
-                    </td>
+                    <td><label for="countryCode">*Your Phone</label></td>
                     <td class="Pain">
-                        <p>Country Code - City Code - Phone Number</p>
-                        <input type="number" id="countryCode" name="countryCode" style="width: 84px;">
-                        <span>- </span>
-                        <input type="number" id="cityCode" name="cityCode" style="width: 56px;">
-                        <span>- </span>
-                        <input type="number" id="phoneNumber" name="phoneNumber" >
+                        <div>
+                            <label for="countryCode">Country Code</label>
+                            <input type="number" id="countryCode" name="countryCode" style="width: 80px;">
+                        </div>
+                        <div>
+                            <label for="cityCode">City Code</label>
+                            <input type="number" id="cityCode" name="cityCode"  style="width: 80px;">
+                        </div>
+                        <div>
+                            <label for="phoneNumber">Phone Number</label>
+                            <input type="number" id="phoneNumber" name="phoneNumber" >
+                        </div>
                     </td>
                 </tr>
                 <tr>
-                    <td>
-                        <label for="Mphone" >Mobile Phone</label>
-                    </td>
-                    <td>
-                        <input type="number" id="Mphone" name="Mphone">
-                    </td>
+                    <td><label for="Mphone">Mobile Phone</label></td>
+                    <td><input type="number" id="Mphone" name="Mphone"></td>
                 </tr>
                 <tr>
-                    <td>
-                        <label for="address" >*Your Postal Address</label>
-                    </td>
-                    <td>
-                        <input type="text" id="address" name="address" required style="height: 70px; width: 300px;">
-                    </td>
+                    <td><label for="address">*Your Postal Address</label></td>
+                    <td><input type="text" id="address" name="address" required></td>
                 </tr>
                 <tr>
+                    <td><label for="country">*Country</label></td>
                     <td>
-                        <label for="country" >*Country</label>
-                    </td>
-                    <td>
-                        <select id="dropdown" name="dropdown">
-                            <option value="default" selected disabled>------- Select One -------</option>
+                        <select id="dropdown" name="dropdown" required>
+                            <option value="" disabled selected>-- Select One --</option>
                             <option value="egypt">Egypt</option>
                             <option value="japan">Japan</option>
                             <option value="germany">Germany</option>
@@ -79,27 +72,32 @@
                     </td>
                 </tr>
                 <tr>
-                    <td>
-                        <label for="password" >*Password</label>
-                    </td>
-                    <td>
-                        <input type="password" id="password" name="password" required>
-                    </td>
+                    <td><label for="password">*Password</label></td>
+                    <td><input type="password" id="password" name="password" required></td>
                 </tr>
                 <tr>
-                    <td>
-                        <label for="confirm-password">*Re-Enter Password</label>
-                    </td>
-                    <td>
-                        <input type="password" id="confirm-password" name="confirm-password" required>
-                    </td>
+                    <td><label for="confirm-password">*Re-Enter Password</label></td>
+                    <td><input type="password" id="confirm-password" name="confirm-password" required></td>
                 </tr>
             </table>
-            <input type="submit">
+
+
+            <div class="centerTable">
+                <label>
+                    <input type="checkbox" name="terms" required>
+                    I accept the <a href="#">Terms of Use</a>
+                </label><br>
+                <button type="submit">Continue >> </button>
+                <button type="reset">Reset</button>
+            </div>
+
+                
+
         </form>
     </div>
+
     <footer>
-        <p><center>Copyright 2021 by Noha Salah &copy;.All Rights Reserved</center></p>
+        <p>&copy; 2021 Noha Salah. All Rights Reserved.</p>
     </footer>
 </body>
 </html>

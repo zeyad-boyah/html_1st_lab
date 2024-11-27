@@ -11,11 +11,11 @@
     <header>
         <ul class="navBar">
             <li><a href="../html_1st_lab/doc/other_page.html">Home</a></li>
-            <li><a href="">Road Map</a></li>
+            <li><a href="../index.html">Road Map</a></li>
             <li><a href="./doc/registrationForm.html">Registration Form</a></li>
             <li><a href="https://iti.gov.eg/home">Contact</a></li>
         </ul>
-        <img src="../img/ITI_logo.png" alt="ITI Logo" width="200px">
+        <img src="../img/ITI_logo.png" alt="ITI Logo" >
     </header>
     <div class="greenBorder">
         <form method="get">
@@ -36,20 +36,22 @@
                     <td><input type="email" id="altEmail" name="altEmail"></td>
                 </tr>
                 <tr>
-                    <td><label for="countryCode">*Your Phone</label></td>
-                    <td class="Pain">
-                        <div>
-                            <label for="countryCode">Country Code</label>
-                            <input type="number" id="countryCode" name="countryCode" style="width: 80px;">
-                        </div>
-                        <div>
-                            <label for="cityCode">City Code</label>
-                            <input type="number" id="cityCode" name="cityCode"  style="width: 80px;">
-                        </div>
-                        <div>
-                            <label for="phoneNumber">Phone Number</label>
-                            <input type="number" id="phoneNumber" name="phoneNumber" >
-                        </div>
+                    <td>
+                        <label for="countryCode">*Your Phone</label>
+                    </td>
+                    <td class="yourPhoneContainer">
+                            <div >
+                                <label for="countryCode">Country Code</label>
+                                <input type="number" id="countryCode" name="countryCode" style="width: 90px;">
+                            </div>
+                            <div >
+                                <label for="cityCode">- City Code</label>
+                                <input type="number" id="cityCode" name="cityCode"  style="width: 80px;">
+                            </div>
+                            <div >
+                                <label for="phoneNumber">- Phone Number</label>
+                                <input type="number" id="phoneNumber" name="phoneNumber" >
+                            </div>
                     </td>
                 </tr>
                 <tr>
@@ -61,7 +63,7 @@
                     <td><input type="text" id="address" name="address" required></td>
                 </tr>
                 <tr>
-                    <td><label for="country">*Country</label></td>
+                    <td><label for="dropdown">*Country</label></td>
                     <td>
                         <select id="dropdown" name="dropdown" required>
                             <option value="" disabled selected>-- Select One --</option>

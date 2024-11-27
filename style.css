@@ -162,13 +162,11 @@ footer p {
     margin-bottom: 5px;
 }
 
-.pain{
-    display: flex;
-    gap: 20px;
-    flex-direction: column;
-
-}
-
 .centerTable {
     text-align: center;
+}
+
+.yourPhoneContainer{
+    display: flex;
+    gap: 10px;
 }
